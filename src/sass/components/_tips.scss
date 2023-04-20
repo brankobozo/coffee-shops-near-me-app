@@ -1,0 +1,50 @@
+.venue-tips {
+  font-size: 1.4rem;
+  padding: 80px 0 60px;
+  background: $bgSec;
+  @media #{$x-small} {
+    font-size: 1rem;
+  }
+  h3 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $titleColor;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
+.tips {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tips__img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  flex: 0 0 120px;
+  @media #{$x-small} {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+  }
+}
+.tips__user {
+  font-weight: $bold;
+  color: $titleColor;
+}
+.tips__text {
+  padding: 20px 0;
+}
+.tips__likes {
+  text-align: center;
+  color: $titleColor;
+  span:first-child {
+    padding-right: 40px;
+    @media #{$x-small} {
+      padding-right: 10px;
+    }
+  }
+}

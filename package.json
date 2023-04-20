@@ -1,0 +1,49 @@
+{
+  "name": "coffee-shops-foursquareApi",
+  "version": "1.0.0",
+  "description": "List of coffee shops based on geolocation, using foursquare API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutko/coffee-shops-foursquareApi.git"
+  },
+  "keywords": [],
+  "author": "Branko Bozovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mutko/coffee-shops-foursquareApi/issues"
+  },
+  "homepage": "https://github.com/mutko/coffee-shops-foursquareApi#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.11.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.12.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "prettier": "^1.16.4"
+  }
+}

@@ -1,0 +1,85 @@
+.details {
+  background: white;
+}
+.venue {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
+.venue__bg {
+  height: 500px;
+  @include coverBg('../img/bg.jpg');
+  @media #{$x-small} {
+    height: 200px;
+  }
+}
+.venue__label {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.venue__header {
+  padding: 40px 10px;
+  background: white;
+  h2 {
+    font-size: 8vw;
+    color: $titleColor;
+    @media #{$medium} {
+      font-size: 5rem;
+    }
+  }
+}
+.venue__contact {
+  padding: 30px;
+  font-size: 1.4rem;
+  background: $bgSec;
+  p {
+    margin-bottom: 30px;
+    position: relative;
+    @media #{$medium} {
+      text-align: left;
+      padding-left: 30px;
+    }
+  }
+  @media #{$x-small} {
+    padding: 10px;
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  }
+  i {
+    color: $titleColor;
+    padding-right: 10px;
+  }
+}
+.venue__info {
+  padding: 40px;
+  background: $bgAlt;
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    width: 50%;
+  }
+  @media #{$x-small} {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 100%;
+    }
+  }
+  i {
+    color: $titleColor;
+    padding-right: 0;
+    &.light {
+      color: #a9a9a9;
+    }
+  }
+}
+.venue__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

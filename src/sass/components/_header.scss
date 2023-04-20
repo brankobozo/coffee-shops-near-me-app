@@ -1,0 +1,43 @@
+.app-header {
+  min-height: 20%;
+  @media #{$vertical} {
+    min-height: 15%;
+  }
+  @include flexCenter();
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+.app-header__title {
+  text-align: center;
+  letter-spacing: 2px;
+  @include flexCenter();
+  a {
+    width: 75px;
+    margin-right: 10px;
+    @media #{$small} {
+      margin-right: 30px;
+    }
+    @media #{$medium} {
+      margin-right: 50px;
+    }
+  }
+  img {
+    width: 75px;
+    @media all and (max-width: 400px) {
+      width: 55px;
+    }
+  }
+  h1 {
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    @media all and (max-width: 400px) {
+      font-size: 1.2rem;
+    }
+  }
+  h2 {
+    @media all and (max-width: 400px) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media #{$small} {
+    padding: 0;
+    width: 560px;
+  }
+  @media #{$medium} {
+    width: 860px;
+  }
+  @media #{$large} {
+    width: 1160px;
+  }
+}
+.container--small {
+  max-width: 760px;
+}
+.error {
+  text-align: center;
+  @include flexCenter();
+  font-size: 1.5rem;
+  padding: 80px 0;
+  .btn {
+    margin-top: 40px;
+  }
+  @media #{$vertical} {
+    min-height: 600px;
+  }
+  .container {
+    p:first-child {
+      padding-bottom: 40px;
+      font-weight: $bold;
+    }
+    p:last-child {
+      padding-top: 40px;
+      font-weight: $bold;
+    }
+  }
+  @media #{$x-small} {
+    font-size: 1.2rem;
+  }
+}
+.btn {
+  display: inline-block;
+  background: $titleColor;
+  color: white;
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  vertical-align: middle;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  text-align: center;
+  touch-action: manipulation;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  @media #{$x-small} {
+    padding: 7px;
+  }
+  &:hover {
+    color: white;
+    background: $btnHover;
+    border-color: $btnHover;
+  }
+}
+.btn--outline {
+  background: transparent;
+  color: $titleColor;
+  border: 2px solid $titleColor;
+}
+.map {
+  height: 400px;
+  padding: 0 30px;
+  @media #{$small} {
+    padding: 0;
+  }
+}
+#mapid {
+  height: 100%;
+  width: 100%;
+}
+.leaflet-popup-content {
+  margin: 0;
+  text-align: center;
+  a {
+    padding: 15px 10px;
+    display: block;
+  }
+}
+.loader {
+  text-align: center;
+}
+.tr100 {
+  transform: translateY(100px);
+}
+.tr-80 {
+  transform: translateY(-80px);
+}
+.tr-100 {
+  transform: translateY(-100px);
+}
+.tr-120 {
+  transform: translateY(-120px);
+}
+.tr-50 {
+  transform: translateY(-50px);
+}
